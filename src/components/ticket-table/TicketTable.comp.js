@@ -12,6 +12,7 @@ export const TicketTable = ({tickets}) => {
 </tr>
 </thead>
 <tbody>
+    {/* what is map ? */}
    {tickets.length ?
    tickets.map((row)=>(
      <tr key={row.id}>
@@ -24,11 +25,8 @@ export const TicketTable = ({tickets}) => {
    <tr>
         <td colSpan="4" className="text-center">No ticket to show</td>
     </tr>
-}
-   
-    
+}   
 </tbody>
-
-    </Table>
+</Table>
     );
 };
